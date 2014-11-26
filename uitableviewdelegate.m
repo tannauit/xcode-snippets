@@ -1,7 +1,7 @@
 // UITableViewDelegate
 // Table view delegate
 //
-// IDECodeSnippetCompletionPrefix: tableviewdelegate
+// IDECodeSnippetCompletionPrefix: setup-tableviewdelegate
 // IDECodeSnippetCompletionScopes: [ClassImplementation]
 // IDECodeSnippetIdentifier: 8ABC912C-BC69-43D5-94E4-83E585E671A1
 // IDECodeSnippetLanguage: Xcode.SourceCodeLanguage.Objective-C

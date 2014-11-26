@@ -1,7 +1,7 @@
 // UITableViewDataSource
 // Table view data source methods
 //
-// IDECodeSnippetCompletionPrefix: tableviewdatasource
+// IDECodeSnippetCompletionPrefix: setup-tableviewdatasource
 // IDECodeSnippetCompletionScopes: [ClassImplementation]
 // IDECodeSnippetIdentifier: DFE5E081-043B-4C5E-83EA-93DB6433BFCF
 // IDECodeSnippetLanguage: Xcode.SourceCodeLanguage.Objective-C
@@ -19,7 +19,7 @@
         case 0:
             return <#number of rows#>;
             break;
-            
+
         default:
             break;
     }
@@ -29,9 +29,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    
+
     // Configure the cell...
-    
+
     return cell;
 }
 
@@ -40,7 +40,7 @@
         case 0:
             return <#title for first header#>;
             break;
-            
+
         default:
             break;
     }
@@ -52,7 +52,7 @@
         case 0:
             return <#title for first footer#>;
             break;
-            
+
         default:
             break;
     }
@@ -64,11 +64,11 @@
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-        
+
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }
